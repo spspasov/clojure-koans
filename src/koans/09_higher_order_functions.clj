@@ -2,6 +2,19 @@
   (:require [koan-engine.core :refer :all]))
 
 (meditations
+
+  ;(->>
+  ;  (range 10)
+  ;  (filter #(even? %))
+  ;  (map #(* % 2)))
+  ;  (reduce +)
+
+  ;or even more succinctly:
+  ;(->> (range 10)
+  ;     (filter even?)
+  ;     (map #(* % 2))
+  ;     (reduce +))
+
   "The map function relates a sequence to another"
   (= [4 8 12] (map (fn [x] (* 4 x)) [1 2 3]))
 
